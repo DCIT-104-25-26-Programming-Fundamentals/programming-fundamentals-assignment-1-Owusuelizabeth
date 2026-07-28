@@ -42,6 +42,25 @@
 
 #
 # =============================================================================
-# YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
+# YOUR CODE BELOW — 
+# Read student score as an integer input
+score input = (input("Enter student score (0-100) :")
+               score = int(score_input)
+# Determine the corresponding letter grade uding conditional statements 
+if 80 <= score <= 100 : 
+  grade = "A"
+elif 70 <= score <= 79 :
+  grade = "B"
+elif 60 <= score <= 69 :
+  grade = "C"
+elif 50 <= score <= 59 :
+  grade = "D"
+elif score < 50 :
+  grade = "F"
+else:
+  grade = "Invalid score" 
+  # Print the final result
+print(f"Grade: {grade}")
+
 # =============================================================================
 
