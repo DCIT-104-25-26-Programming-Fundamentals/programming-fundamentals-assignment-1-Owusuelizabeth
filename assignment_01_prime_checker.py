@@ -32,6 +32,11 @@
 #
 
 # =============================================================================
-# YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
+# YOUR CODE BELOW — 
+def is_prime(n):
+# Numbers less than 2 are not prime if n< 2 :
+  return False
+
+
 # =============================================================================
 
