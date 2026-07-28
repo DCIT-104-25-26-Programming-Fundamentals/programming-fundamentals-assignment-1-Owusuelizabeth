@@ -52,6 +52,34 @@
 
 #
 # =============================================================================
-# YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
+# YOUR CODE BELOW — 
+def print_table(n):
+  print(f"Multiplication Table tor {n}:")
+  for i in range(1, 12):
+    print(f"{n} * {i} = {n * i}")
+ def part_a():
+   try:
+     n = int(input("Enter a number:"))
+     if n <= 0:
+       print("Invalid input.")
+       return
+       print_table(n)
+   except ValueError:
+     print("Invalid input.")
+ def pat_b():
+   try:
+     n = int(input("Enter a number N:"))
+     if n <= 0: 
+       print("Invalid input.")
+       for i in range( 1, n + 1) 
+       print_table(i)
+       if i < n: 
+         print("_____")
+   except ValueError:
+     print("Invalid input.")
+part_a()
+part_b()
+
+       
 # =============================================================================
 
