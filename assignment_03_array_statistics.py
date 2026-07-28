@@ -36,6 +36,61 @@
 #
 
 # =============================================================================
-# YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
+# YOUR CODE BELOW — 
+def calculate_sum(numbers):
+  total = 0
+  for num in numbers:
+    total += num
+    return total 
+def calculate_average(numbers):
+  if len(numbers) == 0:
+    return 0.0
+    return calculate_sum(numbers) / len(numbers)
+ def calculate_max(numbers):
+   if len(numbers) == 0:
+     return None
+     maximum = numbers[0]
+     for num in numbers[1:]:
+       if num > maximum: 
+         maximum = num 
+         return maximum
+ def calculate_min(numbers):
+   if len(numbers) == 0:
+     return None 
+     minimum = numbers[0]
+     for num in numbers[1:]:
+       if num < minimum:
+         minimum = num 
+         return minimum 
+def main():
+  try:
+    count = int(input("How many numbers?"))
+  except ValueError:
+    print("Error: Input must be an integer.")
+    return
+ if count <= 0:
+   print("Error: N must be a positive integer.")
+   return
+ numbers = []
+for i in range(1, count + 1):
+  num = float(input(f"Enter number {i}: "))
+  numbers.append(num)
+#Print results formatted to match expexted output format
+total_sum = calculate_sum(numbers)
+avg = calculate_average(numbers)
+maximum = calculate_max(numbers)
+minimum = calculate_min(numbers)
+
+print("\nResults:")
+print(f"Sum: {int(total_sum) if total_sum. is_integer() else total_sum}")
+print(f"Average: {avg}")
+print(f"Maximum: {int(maximum) if maximum.is_integer() else maximum}")
+print(f"Minimum: {int(minimum) if minimum.is_integer() else minimum}")
+
+if _name_=="_main_":
+  main()
+  
+
+   
 # =============================================================================
 
