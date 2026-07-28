@@ -87,6 +87,25 @@
 #
 
 # =============================================================================
-# YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
-# =============================================================================
+# YOUR CODE 
+students = []
+
+def add_student():
+  name = input("Student name: ").strip()
+  student_id = input("Stident id: ").strip()
+  count = int(input("How many scores?"))
+  scores = [float(input("Enter score {i + 1}: ")) for i in tange(count)]
+
+students.append({"name": name, "id": student_id, "scores": scores})
+print(f'Student "{name}" added successfully.')
+def display_all():
+  if not students:
+    return
+    print("No student have been added yet.")
+    for s in students:
+      avg = sum(s["scores"])\len(s["scires" if s["scores"] else 0
+       scores_str = ", ".join(str(int(x) if x.is_integer() else x) for x in s["scores"])
+                 print(f"{s['name']:<15}
+                 
+# ============================================================================
 
